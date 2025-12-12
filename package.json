@@ -1,0 +1,44 @@
+{
+  "name": "@devtools-at/number-to-words",
+  "version": "1.0.0",
+  "description": "Convert numbers to written words",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "number-to-words",
+    "devtools",
+    "utility",
+    "converter",
+    "encoder",
+    "decoder"
+  ],
+  "author": "DevTools.at",
+  "license": "MIT",
+  "homepage": "https://devtools.at/tools/number-to-words",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devtools-at/number-to-words.git"
+  },
+  "bugs": {
+    "url": "https://github.com/devtools-at/number-to-words/issues"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0"
+  }
+}
